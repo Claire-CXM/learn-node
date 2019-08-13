@@ -1,0 +1,14 @@
+{
+  "name": "learn-node",
+  "version": "0.0.1",
+  "description": "This is the first node project of mine.",
+  "main": "a.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Claire",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^3.9.0"
+  }
+}

@@ -1,0 +1,92 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: white;
+}
+* {
+  box-sizing: border-box;
+}
+main {
+  margin: 0 auto;
+  width: 720px;
+  min-height: calc(100%-52px);
+  background: grey;
+  padding: 0 20px;
+  overflow: auto;
+}
+#my-nav {
+  margin-bottom: 0;
+}
+#question-form {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+}
+#question-form .form-group {
+  flex: 1;
+  margin-right: 16px;
+}
+#question-form .form-group input {
+  width: 100%;
+}
+.anonymous-checkbox {
+  padding: 16px;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.anonymous-checkbox input,
+.anonymous-checkbox label {
+  margin: 0;
+}
+.anonymous-checkbox input {
+  margin-right: 8px;
+}
+@media screen and (max-width: 720px) {
+  main {
+    width: 100%;
+  }
+  #question-form {
+    flex-direction: column;
+  }
+  #question-form .form-group {
+    margin-right: 0;
+  }
+}
+.question-item {
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  padding-bottom: 40px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.question-item p {
+  margin: 0;
+  overflow: hidden;
+}
+.question-item .time {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 12px;
+  color: black;
+  margin-top: 10px;
+}
+.question-item .close-btn {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: #7c7c7c;
+  border-radius: 32px;
+  text-align: center;
+}
